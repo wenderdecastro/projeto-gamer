@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Gamer</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/forms.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- HEADER-------------------------------------------------- -->
+
+  <header>
+    <div class="header-top">
+      <!-- TELEFONE E EMAIL -->
+      <div class="desktop-contact container-grid">
+        <div class="contacts-desktop-layout">
+          <div class="align-row">
+            <img src="assets/icons/contact-phone.svg" alt="Ícone simbolizando um telefone" />
+            <span>(11) 0900-1010</span>
+          </div>
+
+          <div class="align-row">
+            <img src="assets/icons/contact-email.svg" alt="Ícone simbolizando o email" />
+            <span>contato@gamer.com.br</span>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <img src="assets/icons/social-media-facebook.svg" alt="Ícone para compartilhamento no Facebook" />
+          <img src="assets/icons/social-media-linkedin.svg" alt="Ícone para compartilhamento no Linkedin" />
+          <img src="assets/icons/social-media-instagram.svg" alt="Ícone para compartilhamento no Instagram" />
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom container-grid">
+      <div class="header-flex">
+        <img class="mobile-content" src="assets/icons/menu-hamburguer.svg"
+          alt="Menu hamburguer que abre o menu de navegação do site." onclick="leftMenuClick()" />
+
+        <img id="logo" src="assets/images/global/logotipo.png" alt="Logotipo projeto gamer." />
+
+        <img class="mobile-content" src="assets/icons/menu-three-dots.svg"
+          alt="Menu de três pontos que abre o menu de compartilhamento por redes sociais." onclick="rightMenuClick()" />
+      </div>
+
+      <nav id="mobile-leftmenu">
+        <nav class="header-nav" id="header-links">
+          <a href="../index.html">Início</a>
+          <a href="../cadastro-jogadores.html">Jogadores</a>
+          <a href="">Notícias</a>
+          <a href="../cadastro-equipes.html">Equipes</a>
+
+          <div class="contacts-mobile mobile-content">
+            <img src="assets/icons/contact-phone.svg" alt="Ícone simbolizando um telefone" />
+            <span>(11) 0900-1010</span>
+          </div>
+          <div class="contacts-mobile mobile-content">
+            <img src="assets/icons/contact-email.svg" alt="Ícone simbolizando o email" />
+            <span>contato@gamer.com.br</span>
+          </div>
+        </nav>
+
+        <div class="social-media mobile-content">
+          <img src="assets/icons/social-media-facebook.svg" alt="Ícone para compartilhamento no Facebook" />
+          <img src="assets/icons/social-media-linkedin.svg" alt="Ícone para compartilhamento no Linkedin" />
+          <img src="assets/icons/social-media-instagram.svg" alt="Ícone para compartilhamento no Instagram" />
+        </div>
+      </nav>
+
+      <nav class="user-options" id="mobile-rightmenu">
+        <img src="assets/icons/icon-profile.svg" alt="Perfil do usuário" href="../Projeto-Gamer/login.html" />
+        <img src="assets/icons/icon-shoppingbag.svg" alt="Sacola de compras" />
+        <img src="assets/icons/icon-search.svg" alt="Pesquisar" />
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN --------------------------------------------------- -->
+  <main class="cadastro-jogadores">
+    <div class="blur blur-jogadores"></div>
+    <article class="form-card form-players">
+      <form action="" onsubmit="" class="form-format">
+        <h1 class="form-titles">Pagamento</h1>
+        <div class="input">
+          <div class="input-row">
+            <input class="input-box" type="text" placeholder="Insira o nome do titular">
+          </div>
+        </div>
+        
+        <div class="input">
+            <div class="input-row">
+                <input class="input-box" type="text" placeholder="Digite o cpf do titular">
+            </div>
+        </div>
+        
+        <div class="input">
+            <div class="input-row">
+                <input class="input-box" type="email" placeholder="Digite o numero do cartão">
+            </div>
+        </div>
+    <div class= "multi-column-input">
+        <div class="input" id="input1">
+            <div class="input-row">
+                <input class="input-box" id="CVV" type="password" placeholder="CVV">
+            </div>
+        </div>
+        <div class="input" id="input2">
+            <div class="input-row">
+                <input class="input-box" placeholder="MM/AAAA">
+            </div>
+        </div>
+    </div>
+
+        <div class="input">
+          <div class="input-row">
+            <select class="input-select">
+              <option value="0">Pagamento em 1x</option>
+              <option value="0">Pagamento em 2x</option>
+              <option value="0">Pagamento em 3x</option>
+              <option value="0">Pagamento em 4x</option>
+              <option value="0">Pagamento em 5x</option>
+              <option value="0">Pagamento em 6x</option>
+              <option value="0">Pagamento em 7x</option>
+              <option value="0">Pagamento em 8x</option>
+              <option value="0">Pagamento em 9x</option>
+              <option value="0">Pagamento em 10x</option>
+              <option value="0">Pagamento em 11x</option>
+              <option value="1">Pagamento em 12x</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="submit-button" id="pagamento-button">
+          <h2>Pagar</h2>
+        </button>
+
+    </article>
+  </main>
+
+  <!-- FOOTER ------------------------------------------------  -->
+
+  <footer class="footer">
+    <div class="footer-gradient"></div>
+    <div class="footer-box container-grid">
+      <div class="heading-footer container-grid">
+        <img class="logo-footer" src="assets/images/global/logotipo.png" alt="" />
+
+        <p>
+          Nosso sucesso na criação de soluções de negócios se deve em grande
+          parte à nossa equipe talentosa e altamente compromentida.
+        </p>
+        <div class="footer-social-container">
+          <button class="footer-social-button">
+            <img class="footer-svg" src="assets/icons/social-media-facebook.svg" alt="" />
+          </button>
+          <button class="footer-social-button">
+            <img class="footer-svg" src="assets/icons/social-media-linkedin.svg" alt="" />
+          </button>
+          <button class="footer-social-button">
+            <img class="footer-svg" src="assets/icons/social-media-instagram.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="layout-footer container-grid">
+        <article class="footer-links">
+          <h1 class="footer-list-titles">Links Úteis</h1>
+          <ul>
+            <li><a href="">Início</a></li>
+            <li><a href=""> Jogadores</a></li>
+            <li><a href="">Equipes</a></li>
+            <li><a href="">Notícias</a></li>
+            <li><a href="">Login</a></li>
+          </ul>
+        </article>
+
+        <article class="footer-contacts">
+          <h1 class="footer-list-titles">Contatos</h1>
+          <h2>Localização:</h2>
+          <p>Rua Niterói, 180 - São Caetano do Sul- SP</p>
+
+          <h2>Junte-se a nós:</h2>
+          <p>contato@gamer.com.br</p>
+
+          <h2>Telefone:</h2>
+          <p>(11) 0900-1010</p>
+        </article>
+
+        <article class="footer-newsteller-box">
+          <form action="" onsubmit="" class="footer-newsteller">
+            <h1 class="footer-list-titles">Newsteller</h1>
+
+            <div class="input">
+              <div class="input-row">
+                <input class="input-box" type="email" placeholder="Digite seu email:">
+              </div>
+            </div>
+
+            <button class="submit-button">
+              <h2>Enviar</h2>
+            </button>
+          </form>
+        </article>
+      </div>
+    </div>
+    <span class="copyright">© Copyright 2022 - Gamer Jogos Digitais</span>
+  </footer>
+</body>
+
+</html>

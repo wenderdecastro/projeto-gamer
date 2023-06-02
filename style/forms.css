@@ -1,0 +1,352 @@
+.login {
+  height: 700px;
+  background-image: url(../assets/images/global/background-login.png);
+  background-repeat: no-repeat;
+  border-top: inset 60px transparent;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+}
+
+.cadastro-equipes {
+  height: 1366px;
+  background-image: url(../assets/images/global/background-cadastro-equipes.png);
+  background-repeat: no-repeat;
+  border-top: inset 60px transparent;
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cadastro-jogadores {
+  height: 1440px;
+  background-image: url(../assets/images/global/background-cadastro-jogadores.png);
+  border-top: inset 60px transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+main {
+  position: relative;
+}
+
+.blur {
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.form-titles {
+  font-size: 30px;
+  text-align: center;
+  border-bottom: #f9aa01 2px solid;
+  width: fit-content;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.mobile-title {
+  font-size: 22px;
+}
+
+.form-card {
+  padding: 66px 0;
+  position: relative;
+  margin-top: 50px;
+  height: fit-content;
+  width: 90%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(to right bottom, rgba(22, 12, 37, 1), rgba(60, 3, 65, .50)) padding-box,
+    linear-gradient(90deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0.1)) border-box;
+  z-index: 1000;
+}
+
+.form-format {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.input-select {
+  font-family: TitilliumWeb_Regular;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  width: 81%;
+  border: none;
+  display: flex;
+}
+
+.input-select option {
+  display: flex;
+  width: 90%;
+  color: black;
+}
+
+.file-button {
+  border-radius: 8px;
+  width: 45%;
+  height: 40px;
+}
+
+.file-button h2 {
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.file-upload-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.file-upload-layout p {
+  width: 90%;
+  font-size: 10px;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 8px;
+  background-color: #f9aa01;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+}
+
+#pagamento-button{
+  height: 60px;
+  margin: 10px 0px 0px 0px;
+}
+
+.submit-button h2 {
+  font-size: 24px;
+}
+
+.table {
+  width: 90%;
+  margin-top: 80px;
+}
+
+table {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-top: 80px;
+}
+
+thead,
+tbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+thead tr {
+  margin-bottom: 30px;
+  border-bottom: 3px solid #F9AA01;
+}
+
+table thead th {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  color: #F9AA01;
+  font-family: TitilliumWeb_Black;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+table tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table tbody tr {
+  height: 80px;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background:
+    linear-gradient(to right bottom, rgba(22, 12, 37, 1), rgba(60, 3, 65, .50)) padding-box,
+    linear-gradient(90deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0.1)) border-box;
+  backdrop-filter: blur(4px);
+}
+
+table td {
+  color: white;
+  font-family: TitilliumWeb_Bold;
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #F9AA01;
+}
+
+table td:last-of-type {
+  border: none;
+}
+
+table td img.team-logo {
+  width: 75%;
+  height: fit-content;
+}
+
+table td img.trashcan {
+  width: 20px;
+  height: 20px;
+}
+
+table .id {
+  width: 15%;
+}
+
+table .team-name {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start !important;
+  padding-left: 10%;
+}
+
+table .team-logo {
+  width: 25%;
+}
+
+table .delete-team {
+  width: 15%;
+}
+
+.cadastro-jogadores table,
+.table {
+  margin-top: 0px;
+}
+
+.cadastro-jogadores table {
+  margin-top: 55px;
+}
+
+.footer .submit-button {
+  margin: 0;
+}
+
+
+/* ------------------------------------------------------ */
+/* MEDIA QUERY DESKTOP ---------------------------------- */
+/* ------------------------------------------------------ */
+
+@media screen and (min-width: 1200px) {
+
+  main {
+    border-top: none !important;
+  }
+
+  .form-card {
+    margin-top: 80px;
+    width: 50%;
+    max-width: 800px !important;
+  }
+
+  .form-titles {
+    font-size: 40px;
+  }
+
+  .submit-button {
+    border: none;
+    border-radius: 8px;
+    background-color: #f9aa01;
+    width: 285px;
+    height: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .table {
+    max-width: 800px;
+    width: 50%;
+  }
+
+  .blur-login {
+    height: 700px;
+  }
+
+  table tbody tr {
+    height: 125px;
+  }
+
+  table td {
+    font-size: 24px;
+  }
+
+  .file-button {
+    border-radius: 8px;
+    width: 45%;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .file-button h2 {
+    font-size: 20px;
+  }
+
+  .file-upload-layout {
+    justify-content: space-between;
+  }
+
+  .file-upload-status {
+    width: 55%;
+  }
+
+  .file-upload-layout p {
+    font-size: 16px;
+  }
+
+  .last-input {
+    margin-bottom: 0;
+  }
+  
+
+
+  .file-button {
+    margin-bottom: 0;
+  }
+
+  .file-upload-layout {
+    margin-bottom: 0;
+  }
+
+  .button-login {
+    margin-bottom: 40px;
+    width: 200px;
+    height: 60px;
+  }
+
+}
